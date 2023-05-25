@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <i class="bi bi-file-code-fill text-primary fs-1"></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex flex-row-reverse me-5" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-primary fw-bolder" aria-current="page" href="#">Home</a>
+                    <a class="nav-link text-primary fw-bolder" aria-current="page" href="#contato">Contato</a>
+                    <a class="nav-link text-primary fw-bolder" aria-current="page" href="#rede">Redes Sociais</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/seed/1/1920/700" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/seed/2/1920/700" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/seed/3/1920/700" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row mt-5">
+            <div class="col-4">
+                <h4 class="display-5">Galeria</h4>
+                <div class="row mt-4">
+                    <div class="card p-0" style="width: 18rem; height: 22.5rem;">
+                        <div id="carouselExampleIndicators1" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://picsum.photos/seed/11/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/12/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/13/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Modal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba mais</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="card p-0" style="width: 18rem; height: 22.5rem;">
+                        <div id="carouselExampleIndicators2" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://picsum.photos/seed/14/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/15/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/16/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-primary ">Saiba mais</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="card p-0" style="width: 18rem; height: 22.5rem;">
+                        <div id="carouselExampleIndicators3" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://picsum.photos/seed/17/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/18/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://picsum.photos/seed/19/1920/1200" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the.</p>
+                            <div class="text-end">
+                                <a href="#" class="btn btn-primary ">Saiba mais</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-7">
+                <h4 class="display-4">Informática</h4>
+                <div class="row">
+                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Perferendis ea nostrum vel eos qui?
+                        Voluptatem illum libero vitae modi veritatis quibusdam consectetur blanditiis, tenetur et id
+                        animi deleniti nihil officia?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Recusandae odio labore molestias saepe, necessitatibus blanditiis quibusdam quos beatae maxime
+                        est exercitationem doloremque velit, ratione.</p>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/seed/7/1000/800" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum non
+                            necessitatibus? Quam voluptatum ad exercitationem vitae libero nesciunt placeat eius,
+                            asperiores magnam autem ratione facilis? Blanditiis aliquid aspernatur iusto nesciunt
+                            placeat eius,
+                            asperiores?</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/seed/8/1000/800" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum non
+                            necessitatibus? Quam voluptatum ad exercitationem vitae libero nesciunt placeat eius,
+                            asperiores magnam autem ratione facilis? Blanditiis aliquid aspernatur iusto Blanditiis
+                            aliquid aspernatur iusto?</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="https://picsum.photos/seed/9/1000/800" class="img-fluid" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum non
+                            necessitatibus? Quam voluptatum ad exercitationem vitae libero nesciunt placeat eius,
+                            asperiores magnam autem ratione facilis? Blanditiis aliquid aspernatur iusto Blanditiis
+                            aliquid aspernatur.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/seed/10/1000/800" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+                            sunt blanditiis! Quo deserunt blanditiis aspernatur officiis, obcaecati commodi quasi
+                            recusandae totam accusamus alias repellat debitis molestiae soluta saepe exercitationem
+                            sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum non
+                            necessitatibus? Quam voluptatum ad exercitationem vitae libero nesciunt placeat eius,
+                            asperiores magnam autem ratione facilis? Blanditiis aliquid aspernatur iusto exercitationem
+                            vitae libero?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <h5 class="display-5 text-center" id="contato">Contato</h5>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://picsum.photos/seed/24/700/850" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Nome Completo</h2>
+                                <input class="d-flex w-100 form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <h2>E-mail</h2>
+                                <input class="w-100 form-control">
+                            </div>
+                            <div class="col-4">
+                                <h2>Data</h2>
+                                <input class="w-100 form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h2>Curso</h2>
+                                <select name="curso" class="w-100 form-control" id="curso-select">
+                                    <option value=""></option>
+                                    <option value="ADS">ADS</option>
+                                    <option value="GTI">GTI</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <h2>Período</h2>
+                                <select name="periodo" class="w-100 form-control" id="periodo-select">
+                                    <option value=""></option>
+                                    <option value="Tarde">Tarde</option>
+                                    <option value="Noite">Noite</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row" style="height: 30vh;">
+                            <div class="col-11">
+                                <h2>Comentario</h2>
+                                <input class="w-100 form-control h-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 bg-primary mt-4">
+        <div class="container">
+            <div class="row">
+                <h4 class="display-5  mt-3 text-light" id="rede">Redes Sociais</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <i class="ms-2 bi bi-instagram text-light" style="font-size: 2rem;"></i><a href="#"
+                        class="ms-3 fs-3 text-light d-inline"><b>Instagram</b></a>
+                </div>
+                <div class="col-12">
+                    <i class="ms-2 bi bi-facebook text-light" style="font-size: 2rem;"></i><a href="#"
+                        class="ms-3 fs-3 text-light d-inline"><b>Facebook</b></a>
+                </div>
+                <div class="col-12 d-flex justify-content-between">
+                    <div>
+                        <i class="ms-2 bi bi-linkedin text-light" style="font-size: 2rem;"></i><a href="#"
+                            class="ms-3 fs-3 text-light d-inline"><b>Linkedin</b></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="ms-2 bi bi-arrow-up-circle-fill text-light d-inline flex-row-reverse"
+                            style="font-size: 2rem;"></i></a>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="https://picsum.photos/seed/14/700/850" class="img-fluid" alt="...">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+     
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
